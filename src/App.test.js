@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe("App Component", () => {
+  it('renders shopping cart header element', () => {
+    render(<App />);
+    const linkElement = screen.getByRole("banner").textContent;
+    expect(linkElement).toMatch(/the odin project: shopping cart/i)
+  });
+})
