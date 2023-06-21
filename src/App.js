@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
@@ -9,8 +9,10 @@ function App() {
       <header className="App-header">
         The Odin Project: Shopping Cart
       </header>
-      <Button as={Link} to="/shopping-cart" text="Shopping Cart">
-      </Button>
+      <footer>
+        <Button as={Link} to="/shopping-cart" text="View My Cart">
+        </Button>
+      </footer>
     </div>
   );
 }

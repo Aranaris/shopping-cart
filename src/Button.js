@@ -1,3 +1,5 @@
+import './styles/Button.css';
+
 function Button({onClick, text, as: Component = 'button', ...rest}) {
     return (
         <div className="Button">
