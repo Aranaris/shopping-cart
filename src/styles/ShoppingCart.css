@@ -1,3 +1,13 @@
 .ShoppingCart {
     text-align: center;
 }
+
+.cart-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}

@@ -4,6 +4,7 @@ import App from "./App";
 import ShoppingCart from "./ShoppingCart";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import Checkout from "./Checkout";
 
 const RouteSwitch = () => {
     return (
@@ -15,6 +16,7 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/shopping-cart" element={<ShoppingCart />} />
+                <Route path="/checkout" element={<Checkout />} />
             </Routes>
         </BrowserRouter>
     )

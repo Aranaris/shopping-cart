@@ -18,5 +18,8 @@ nav {
 }
 
 footer {
-  text-align: start;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  font-size: small;
 }
