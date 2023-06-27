@@ -23,3 +23,20 @@ footer {
   gap: 10px;
   font-size: small;
 }
+
+.page-header {
+  display: flex;
+  justify-content: left;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+}

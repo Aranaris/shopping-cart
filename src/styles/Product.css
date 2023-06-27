@@ -1,0 +1,11 @@
+.Product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.product-image {
+    aspect-ratio: 1;
+    border: 1px solid red;
+}

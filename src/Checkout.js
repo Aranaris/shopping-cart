@@ -8,7 +8,9 @@ function Checkout() {
             <div className="page-header">
                 Checkout
             </div>
-            <Button as={Link} to="/shopping-cart" text="Return to Cart">
+            <Button as={Link} to="/shop" text="Shop more products">
+            </Button>
+            <Button as={Link} to="/shopping-cart" text="View Cart">
             </Button>
             <footer>
                 <Button as={Link} to="/" text="Return to Home">

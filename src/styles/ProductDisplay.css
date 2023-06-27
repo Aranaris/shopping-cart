@@ -1,0 +1,15 @@
+.ProductDisplay {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.product-container {
+    border: 1px dashed #0000ff;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
