@@ -3,6 +3,19 @@ import Button from "./Button";
 import './styles/ShoppingCart.css';
 
 function ShoppingCart(props) {
+    const removeItemFromCart = (event) => {
+        let index = event.target.value;
+        let newCart = [...props.cartItems];
+        if (newCart[index]["quantity"] === 1) {
+            newCart.splice(index, 1);
+        } else {
+            newCart[index] = {
+                product: newCart[index]["product"],
+                quantity: props.cartItems[index]["quantity"] - 1,
+            }
+        }
+        props.setCartItems(newCart);
+    }
 
     return (
       <div className="ShoppingCart">
@@ -18,7 +31,7 @@ function ShoppingCart(props) {
         <div className="cart-items">
             <li>
                 {props.cartItems.map((item, key) => {
-                    return <ol key={key}>{key}: {item}</ol>
+                    return <ol key={key}>Product Name: {item["product"]} || Quantity: {item["quantity"]} <button onClick={removeItemFromCart} value={key}>-</button></ol>
                 })}
             </li>
         </div>
