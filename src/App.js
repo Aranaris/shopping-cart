@@ -10,7 +10,7 @@ function App() {
         The Odin Project: Shopping Cart
       </header>
       <footer>
-        <Button as={Link} to="/shopping-cart" text="View My Cart">
+        <Button as={Link} to="/cart" text="View My Cart">
         </Button>
       </footer>
     </div>
