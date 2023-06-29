@@ -1,6 +1,4 @@
 import './styles/App.css';
-import Button from './Button';
-import { Link } from 'react-router-dom';
 
 function App() {
 

@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Shop from "./Shop";
-import ShoppingCart from "./ShoppingCart";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import Checkout from "./Checkout";
